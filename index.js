@@ -56,3 +56,9 @@ inputEl.addEventListener("keypress", function(event) {
     inputEl.value = ""
     }
 })
+
+listEl.addEventListener("click", function(event) {
+    if (event.target && event.target.nodeName === "LI") {
+        event.target.remove();
+    }
+});
