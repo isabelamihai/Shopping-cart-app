@@ -1,0 +1,12 @@
+{
+    "manifest_version": 1,
+    "version": "1.0",
+    "name": "Shopping-Cart-App",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "apple-touch-icon.png"
+    },
+    "permissions": [
+        "tabs"
+    ]
+}
