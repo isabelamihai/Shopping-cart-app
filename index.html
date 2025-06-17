@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delius&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -14,11 +19,15 @@
 </head>
 
 <body>
-    <img src="cat-photo.jpg">
-    <input type="text" id="input-el" placeholder="Add item to your cart">
-    <button id="add-btn">Add to cart</button>
-    <button id="delete-btn">Empty cart</button>
-    <ul id="list-el"></ul>
+    <section class="cart-section">
+        <img id="cat" src="cat-photor-resized.jpg">
+        <input type="text" id="input-el" placeholder="Add item to your cart">
+        <div id="btns">
+            <button id="add-btn">Add to cart</button>
+            <button id="delete-btn">Empty cart</button>
+        </div>
+        <ul id="list-el"></ul>
+    </section>
     <script type="module" src="index.js"></script>
 </body>
 

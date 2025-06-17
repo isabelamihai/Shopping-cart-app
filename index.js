@@ -15,7 +15,7 @@ const referenceInDB = ref(database, "shopping items")
 
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("add-btn")
-const ulEl = document.getElementById("list-el")
+const listEl = document.getElementById("list-el")
 const deleteBtn = document.getElementById("delete-btn")
 
 function render(items) {
@@ -23,30 +23,36 @@ function render(items) {
     for (let i = 0; i < items.length; i++) {
         listItems += `
             <li>
-                <a target='_blank' href='${items[i]}'>
                     ${items[i]}
-                </a>
             </li>
         `
     }
-    ulEl.innerHTML = listItems
+    listEl.innerHTML = listItems
 }
 
 onValue(referenceInDB, function(snapshot) {
     const snapshotDoesExist = snapshot.exists()
     if (snapshotDoesExist) {
         const snapshotValues = snapshot.val()
-        const items= Object.values(snapshotValues)
+        const items = Object.values(snapshotValues)
         render(items)
     }
 })
 
 deleteBtn.addEventListener("dblclick", function() {
     remove(referenceInDB)
-    ulEl.innerHTML = ""
+    listEl.innerHTML = ""
 })
 
 inputBtn.addEventListener("click", function() {
     push(referenceInDB, inputEl.value)
     inputEl.value = "" 
+})
+
+inputEl.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+         push(referenceInDB, inputEl.value)
+    inputEl.value = ""
+    }
 })

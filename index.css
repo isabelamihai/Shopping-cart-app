@@ -1,0 +1,59 @@
+body{
+    margin:0 auto;
+    padding:30px;
+    max-width: 350px;
+    text-decoration:none;
+}
+.cart-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+
+}
+#cat{
+    max-width: 250px;
+    border:5px solid #ffe9f4;
+    border-radius: 50%;
+}
+
+#input-el{
+   max-width: 250px;
+   font-size: 18px;
+   border:2px dotted #f393c3;
+}
+
+#list-el{
+    text-align: center;
+    padding:0;
+    font-size: 16px;
+    list-style-type: none;
+    color:#3a020d;
+    text-decoration-line: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    max-width: 250px;
+}
+
+#list-el li{
+    border: 1px solid #f393c3;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: #fde9e0;
+    font-family: 'Delius', Georgia, 'Times New Roman';
+}
+
+#add-btn, #delete-btn{
+    font-family: 'Delius', Georgia, 'Times New Roman';
+    font-size:17px;
+    font-weight: 600;
+    color: #3a020d;
+    background-color:#f393c3;
+    border:2px solid rgb(58, 2, 13);
+    border-radius:10px;
+   
+   
+}
