@@ -4,7 +4,6 @@ body{
     max-width: 350px;
     text-decoration:none;
     background-color: #fefefe;
-    border: 5px dotted #f393c3;
     border-radius:20px;
     max-height: 100vh;
 }
@@ -32,7 +31,6 @@ body{
 
 #list-el{
     text-align: center;
-    padding:0;
     font-size: 16px;
     list-style-type: none;
     color:#3a020d;
@@ -41,6 +39,7 @@ body{
     flex-wrap: wrap;
     gap:10px;
     max-width: 250px;
+    padding:10px;
 }
 
 #list-el li{
