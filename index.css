@@ -3,13 +3,18 @@ body{
     padding:30px;
     max-width: 350px;
     text-decoration:none;
+    background-color: #fee7f0;
+    border: 5px dotted #f393c3;
+    border-radius:20px;
 }
+
 .cart-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap:10px;
+    
 
 }
 #cat{
