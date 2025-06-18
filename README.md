@@ -25,7 +25,7 @@ For IPhone: Open the [link](https://lead-trackerapp.netlify.app/) in your mobile
 
 ## 🖻SS
 
-![SS with the app](![shopping-cart-ss](https://github.com/user-attachments/assets/890b3d05-2499-464e-ac93-1bb8f38652ae)
+[SS w/ the app](https://github.com/user-attachments/assets/890b3d05-2499-464e-ac93-1bb8f38652ae)
 
 
 ## 🔛Live link
